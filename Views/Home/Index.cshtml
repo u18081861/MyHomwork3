@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Media App";
+}
+<br />
+
+<h2>Media App</h2>
+<p>File & Document Management Application</p>
+<br />
+<div class="MainContainer">
+
+    <div class="dContainer col-lg-8">
+        <h3>Description</h3>
+        <p>This File and Document Management Application is designed to facilatate the uploading, dowloading and deleting of files, documents and media to and from there respective folders.     :) </p>
+
+    </div>
+</div>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+<div class="uploadBox col-lg-4">
+    <h1> Upload Files </h1>
+    <br />
+    <h3>Select File Type</h3>
+
+
+
+
+
+    @Html.RadioButton("Type", "doc") Document
+
+    <br />
+
+    @Html.RadioButton("Type", "img") Image
+
+
+    <br />
+
+    @Html.RadioButton("Type", "vid") Video
+
+
+    <br />
+
+    @Html.TextBox("file", "", new { type = "file" })
+    
+
+    <br />
+
+    <input type="submit" value="Save Files" class="goodButton" id="Submit" />
+    @ViewBag.Message
+
+</div>
+}
+
+
+

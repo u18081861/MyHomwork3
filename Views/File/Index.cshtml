@@ -1,0 +1,35 @@
+﻿@using HW3.Models
+
+@model List<FileModel>
+
+@{
+    ViewBag.Title = "Files";
+}
+
+<h2>Documents</h2>
+<h5>These are all your documents</h5>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">File Name:</th>
+            <th scope="col">Download</th>
+            <th scope="col">Delete</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (FileModel file in Model)
+        {
+            <tr>
+                <td>@file.FileName</td>
+                <td>@Html.ActionLink("Dowload", "DownloadFile", new { fileName = file.FileName })</td>
+                <td>@Html.ActionLink("Delete", "Delete", new { fileName = file.FileName }) </td>
+
+
+            </tr>
+        }
+
+    </tbody>
+</table>

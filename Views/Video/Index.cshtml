@@ -1,0 +1,33 @@
+﻿@using HW3.Models
+
+@model List<FileModel>
+
+@{
+    ViewBag.Title = "Videos";
+}
+
+<h2>Videos</h2>
+<p>Here are all your Videos.</p>
+<br />
+
+@foreach (FileModel file in Model)
+{
+    <div class="ImageContainer col-sm-6 col-md-3 col-lg-3">
+        <div class="cardHead">
+            <h5>File Name:</h5>
+            <H7> @file.FileName</H7>
+        </div>
+        <br>
+        <video onclick="fancyFunction()"width="250" height="250" controls><source src="~/Media/Videos/@file.FileName" type="audio/mp4" /></video>  
+
+        <br />
+        <br />
+        <div class="DDbutons">
+            @Html.ActionLink("Dowload", "DownloadFile", new { fileName = file.FileName })
+            @Html.ActionLink("Delete", "Delete", new { fileName = file.FileName })
+        </div>
+        <br />
+    </div>
+
+}
+
