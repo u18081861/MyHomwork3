@@ -1,0 +1,121 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.goodButton{
+    border-radius: 7px;
+    border-color:white;
+    background-color:darkcyan;
+    color:white;
+    margin-bottom:5px;
+
+}
+    .goodButton:hover {
+        background-color: cyan;
+    }
+
+.ImageContainer {
+    border: 1px solid lightgray;
+    border-radius: 11px;
+    background-color: lightgray;
+    align-content: center;
+    margin-left: 20px;
+    margin-right: 7px;
+    margin-bottom: 20px;
+}
+    .ImageContainer:hover {
+        background-color: white;
+        border: 1px solid #1a1a3c;
+        ;
+    }
+.badButton {
+    border-radius: 7px;
+    border-color: white;
+    background-color: indianred;
+    color: white;
+}
+    .badButton:hover {
+        background-color: #ff0000;
+    }
+.uploadBox{
+    border:1px solid black;
+    border-radius:7px;
+}
+.dContainer {
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    color: black
+}
+
+.navbar {
+    background-color: #1a1a3c;
+}
+.nav li{
+    color:white;
+}
+.ImageContainer{
+    max-width:400px;
+    min-width:280px;
+   
+}
+.cardHead {
+    height: 35px;
+    color: white;
+    background-color: #1a1a3c;
+    border-radius: 11px;
+    padding-left: -4px;
+    padding-right: -4px;
+    max-width: 380px;
+    min-width: 260px;
+    margin-bottom:2px;
+    margin-top:4px;
+    align-content:center;
+    text-align:center;
+    height:75px;
+}
+    .cardHead h5{
+       
+       padding-top:6px;
+    }
+    .ImageContainer image {
+        max-width: 380px;
+        min-width: 260px;
+        border-radius: 11px;
+    }
+.DDbuttons{
+    margin-bottom:12px;
+    margin-top:4px;
+    align-content:center;
+}
+.mePara {
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    color: black
+}
+.table thead {
+    background-color: #1a1a3c;
+    color: white;
+}
+.table tbody tr:hover {
+    background-color: lightgray;
+}
